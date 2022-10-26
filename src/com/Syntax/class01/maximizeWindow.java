@@ -11,8 +11,10 @@ public class maximizeWindow {
 
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
+
         WebDriver driver = new ChromeDriver();  // Create an instance of WebDriver
         driver.get("https://www.google.com/");  // Go to Google.com
+
         driver.manage().window().maximize();  // Maximize the window
 
         driver.manage().window().fullscreen(); // Make the screen full

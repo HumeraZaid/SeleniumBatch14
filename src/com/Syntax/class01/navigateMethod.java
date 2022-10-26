@@ -12,6 +12,7 @@ public class navigateMethod {
     public static void main(String[] args) throws InterruptedException {
 
         System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
+
         WebDriver driver = new ChromeDriver();  // Create the WebDriver instance
         driver.get("https://www.google.com/");  // Go to google.com
 
