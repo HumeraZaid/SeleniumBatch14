@@ -30,7 +30,7 @@ public class locatingElements {
 
         /*
            Task 2:
-           Click on Forgot Password.
+           Click on Forgot Password?.
          */
 
         // driver.findElement(By.linkText("Forgot password?")).click();
