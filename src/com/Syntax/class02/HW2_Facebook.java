@@ -4,7 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class HW2_Facebook {
+public class
+HW2_Facebook {
 
     /*
       Navigate to fb.com.
@@ -39,7 +40,9 @@ public class HW2_Facebook {
 
         Thread.sleep(3000);
 
-        driver.quit();
+        // driver.quit();
+
+        driver.close();
     }
 }
 

@@ -1,12 +1,12 @@
-package com.Syntax.class03;
+package reviewClass;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class HW1_SyntaxProjects {
+public class Class03_HW1_SyntaxProjects_Review {
 
-    /*
+     /*
        Navigate to http://syntaxprojects.com/.
        Click on start practicing.
        Click on simple form demo.
@@ -22,30 +22,20 @@ public class HW1_SyntaxProjects {
         WebDriver driver = new ChromeDriver();  // Create a WebDriver instance
         driver.get("http://syntaxprojects.com/");  // Go to syntaxprojects.com
 
-        Thread.sleep(2000);
+        driver.manage().window().maximize();
 
-        driver.manage().window().maximize();  // Maximize the window
-
+        driver.findElement(By.xpath("//a[text()=' Start Practising ']")).click();
         Thread.sleep(3000);
 
-        driver.findElement(By.xpath("//a[@id='btn_basic_example']")).click();
+        // Comment out either Method 1 or Method 2 , you cannot use them at the same time because they are clicking on the same button.
 
-        Thread.sleep(2000);
+        // Method 1 -- Click on Simple Form Demo using indexing
 
-        driver.findElement(By.xpath("//a[starts-with(@class,'list')]")).click();
+        // driver.findElement(By.xpath("(//a[@class='list-group-item'])[1]")).click();
 
-        Thread.sleep(3000);
+        // Method 2 -- Click on Simple Form Demo using and operator in the xpath
 
-        driver.findElement(By.xpath("//input[contains(@placeholder, 'Message')]")).sendKeys("Keep calm and learn Selenium!!");
+        driver.findElement(By.xpath("//a[@class='list-group-item' and @href='basic-first-form-demo.php']")).click();
 
-        Thread.sleep(2000);
-
-        driver.findElement(By.xpath("//button[text()='Show Message']")).click();
-
-        Thread.sleep(3000);
-
-       // driver.quit();
-
-        driver.close();
     }
 }

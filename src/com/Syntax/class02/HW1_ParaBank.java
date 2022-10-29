@@ -37,6 +37,7 @@ public class HW1_ParaBank {
 
         Thread.sleep(10000);
 
-        driver.quit();
+        // driver.quit();
+        driver.close();
     }
 }

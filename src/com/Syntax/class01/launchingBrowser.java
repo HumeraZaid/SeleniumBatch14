@@ -21,7 +21,9 @@ public class launchingBrowser {
         String title = driver.getTitle();  // Get the title of the website
         System.out.println(title);  // Print the title
 
-        driver.quit(); // Quit the Chrome browser
+        // driver.quit(); // Quit the Chrome browser
+
+        driver.close();
 
     }
 }

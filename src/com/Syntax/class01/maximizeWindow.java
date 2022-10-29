@@ -18,7 +18,8 @@ public class maximizeWindow {
         driver.manage().window().maximize();  // Maximize the window
 
         driver.manage().window().fullscreen(); // Make the screen full
-        driver.quit();  // Quit the browser
+      //  driver.quit();  // Quit the browser
+        driver.close();
     }
 
 }

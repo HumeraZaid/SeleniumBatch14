@@ -30,7 +30,8 @@ public class navigateMethod {
 
         driver.navigate().refresh();  // Refresh the page
 
-        driver.quit();  // Quit the browser
+      //  driver.quit();  // Quit the browser
+        driver.close();
 
     }
 }

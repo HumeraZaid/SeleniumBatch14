@@ -17,7 +17,7 @@ public class xpathDemo {
 
         driver.findElement(By.xpath("//input[@id='email']")).sendKeys("Abracadabra"); // Enter the username
         driver.findElement(By.xpath("//a[text()='Forgot password?']")).click(); //  Click on Forgot Password?
-       //driver.findElement(By.xpath("//button[contains(@type,'sub')]")).click(); //  Click on Log In
+       // driver.findElement(By.xpath("//button[contains(@type,'sub')]")).click(); //  Click on Log In
        // driver.findElement(By.xpath("//a[contains(text(),'Forgot')]")).click(); //  Click on Forgot Password?
     }
 }

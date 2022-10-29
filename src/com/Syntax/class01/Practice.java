@@ -25,6 +25,7 @@ public class Practice {
             driver.navigate().refresh();
         }
 
-        driver.quit();
+        // driver.quit();
+        driver.close();
     }
 }
