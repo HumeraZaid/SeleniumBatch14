@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class
-HW2_Facebook {
+C2_HW2 {
 
     /*
       Navigate to fb.com.

@@ -11,26 +11,40 @@ public class navigateMethod {
 
     public static void main(String[] args) throws InterruptedException {
 
+        // Set the path to the driver to link it with our class. On MAC, you don't need .exe. On Windows, you need .exe.
         System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
 
-        WebDriver driver = new ChromeDriver();  // Create the WebDriver instance
-        driver.get("https://www.google.com/");  // Go to google.com
+        // Create the WebDriver instance
+        WebDriver driver = new ChromeDriver();
 
-        driver.navigate().to("https://www.facebook.com/");  // Go to facebook.com
+        // Go to google.com
+        driver.get("https://www.google.com/");
 
-        Thread.sleep(2000);  // introduce some sleep, which is wait. Wait or pause for 2000 milliseconds (2 seconds)
+        // Go to facebook.com
+        driver.navigate().to("https://www.facebook.com/");
 
-        driver.navigate().back();  // Go back to google.com
+        // introduce some sleep, which is wait. Wait or pause for 2000 milliseconds (2 seconds)
+        Thread.sleep(2000);
 
-        Thread.sleep(2000);  // Wait for 2 seconds
+        // Go back to google.com
+        driver.navigate().back();
 
-        driver.navigate().forward();  // Go back to facebook.com
+        // Wait for 2 seconds
+        Thread.sleep(2000);
 
-        Thread.sleep(1000); // Wait for 1 second
+        // Go back to facebook.com
+        driver.navigate().forward();
 
-        driver.navigate().refresh();  // Refresh the page
+        // Wait for 1 second
+        Thread.sleep(1000);
 
-      //  driver.quit();  // Quit the browser
+        // Refresh the page
+        driver.navigate().refresh();
+
+        // Quit the browser
+        // driver.quit();
+
+        // Close the current tab
         driver.close();
 
     }

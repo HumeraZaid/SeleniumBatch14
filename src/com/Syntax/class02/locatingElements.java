@@ -15,18 +15,29 @@ public class locatingElements {
      */
 
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe"); // Set the path to the driver to link it with our class. On MAC, you don't need .exe. On Windows, you need .exe.
 
-        WebDriver driver = new ChromeDriver();  // Create a WebDriver instance
-        driver.get("https://www.facebook.com/");  // Go to fb.com
+        // Set the path to the driver to link it with our class. On MAC, you don't need .exe. On Windows, you need .exe.
+        System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
 
-        driver.manage().window().maximize();  // Maximize the window
+        // Create the WebDriver instance
+        WebDriver driver = new ChromeDriver();
 
-        driver.findElement(By.id("email")).sendKeys("abracadbara");  // Enter the username in the text box. Locate the element and send the keys.
-        driver.findElement(By.name("pass")).sendKeys("waow12345678"); // Enter the password in the text box.
-        driver.findElement(By.name("login")).click();  // Click on login
+        // Go to fb.com
+        driver.get("https://www.facebook.com/");
 
-        // For the following task to wor, please make sure that you comment the login functionality.
+        // Maximize the window
+        driver.manage().window().maximize();
+
+        // Enter the username in the textbox. Locate the element and send the keys
+        driver.findElement(By.id("email")).sendKeys("abracadbara");
+
+        // Enter the password in the text box
+        driver.findElement(By.name("pass")).sendKeys("waow12345678");
+
+        // Click on login
+        driver.findElement(By.name("login")).click();
+
+        // For the following task to work, please make sure that you comment the login functionality.
 
         /*
            Task 2:

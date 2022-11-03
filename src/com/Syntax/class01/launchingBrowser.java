@@ -10,19 +10,32 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class launchingBrowser {
 
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");  // Set the path to the driver to link it with our class. On MAC, you don't need .exe. On Windows, you need .exe.
 
-        WebDriver driver = new ChromeDriver();  // Create a WebDriver instance
-        driver.get("https://www.google.com/");  // Use the get() function to open up the required website
+        // Set the path to the driver to link it with our class. On MAC, you don't need .exe. On Windows, you need .exe.
+        System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
 
-        String url = driver.getCurrentUrl(); // Get the URL of the website
-        System.out.println(url);      // Print the URL
+        // Create a WebDriver instance
+        WebDriver driver = new ChromeDriver();
 
-        String title = driver.getTitle();  // Get the title of the website
-        System.out.println(title);  // Print the title
+        // Use the get() function to open up the required website
+        driver.get("https://www.google.com/");
 
-        // driver.quit(); // Quit the Chrome browser
+        // Get the URL of the website
+        String url = driver.getCurrentUrl();
 
+        // Print the URL
+        System.out.println(url);
+
+        // Get the title of the website
+        String title = driver.getTitle();
+
+        // Print the title
+        System.out.println(title);
+
+        // Quit the Chrome browser
+        // driver.quit();
+
+        // Close the current tab
         driver.close();
 
     }

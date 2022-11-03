@@ -8,16 +8,28 @@ public class xpathDemo {
 
     public static void main(String[] args) {
 
-        System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe"); // Set the path to the driver to link it with our class. On MAC, you don't need .exe. On Windows, you need .exe.
+        // Set the path to the driver to link it with our class. On MAC, you don't need .exe. On Windows, you need .exe.
+        System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
 
-        WebDriver driver = new ChromeDriver();  // Create a WebDriver instance
-        driver.get("https://www.facebook.com/");  // Go to fb.com
+        // Create the WebDriver instance
+        WebDriver driver = new ChromeDriver();
 
-        driver.manage().window().maximize();  // Maximize the window
+        // Go to fb.com
+        driver.get("https://www.facebook.com/");
 
-        driver.findElement(By.xpath("//input[@id='email']")).sendKeys("Abracadabra"); // Enter the username
-        driver.findElement(By.xpath("//a[text()='Forgot password?']")).click(); //  Click on Forgot Password?
-       // driver.findElement(By.xpath("//button[contains(@type,'sub')]")).click(); //  Click on Log In
-       // driver.findElement(By.xpath("//a[contains(text(),'Forgot')]")).click(); //  Click on Forgot Password?
+        // Maximize the window
+        driver.manage().window().maximize();
+
+        // Enter the username
+        driver.findElement(By.xpath("//input[@id='email']")).sendKeys("Abracadabra");
+
+        // Click on Forgot Password?
+        driver.findElement(By.xpath("//a[text()='Forgot password?']")).click();
+
+        // Click on Log In
+        // driver.findElement(By.xpath("//button[contains(@type,'sub')]")).click();
+
+        // Click on Forgot Password?
+        // driver.findElement(By.xpath("//a[contains(text(),'Forgot')]")).click();
     }
 }
