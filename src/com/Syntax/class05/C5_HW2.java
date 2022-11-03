@@ -48,15 +48,15 @@ public class C5_HW2 {
         String title = driver.getTitle();
         System.out.println("Title is: " + title);
 
-        String newTitle = title;
+        String confirmTitle = "Computers, Laptops, Tablets & Network Hardware for Sale - eBay";
 
-        if(title.equalsIgnoreCase(newTitle))
+        if(title.equalsIgnoreCase(confirmTitle))
         {
-            System.out.println("The title " + "\"" + newTitle + "\"" + " is verified.");
+            System.out.println("The title " + "\"" + confirmTitle + "\"" + " is verified.");
         }
         else
         {
-            System.out.println("The title " + "\"" + newTitle + "\"" + " is not verified.");
+            System.out.println("The title " + "\"" + confirmTitle + "\"" + " is not verified.");
         }
     }
 }
