@@ -40,7 +40,7 @@ public class C5_HW2 {
             System.out.println(text);
         }
 
-        categories.selectByValue("58058");
+        categories.selectByVisibleText("Computers/Tablets & Networking");
 
         WebElement search = driver.findElement(By.id("gh-btn"));
         search.click();

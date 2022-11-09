@@ -1,10 +1,10 @@
-package reviewClass;
+package reviewClass01;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Class02_HW2_Facebook_Review {
+public class C2_HW2_Review {
 
      /*
       Navigate to fb.com.
@@ -16,10 +16,10 @@ public class Class02_HW2_Facebook_Review {
 
     public static void main(String[] args) throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe"); // Set the path to the driver to link it with our class. On MAC, you don't need .exe. On Windows, you need .exe.
+        System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
 
-        WebDriver driver = new ChromeDriver();  // Create a WebDriver instance
-        driver.get("https://www.facebook.com/");  // Go to fb.com
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://www.facebook.com/");
 
         driver.manage().window().maximize();
 
@@ -29,7 +29,8 @@ public class Class02_HW2_Facebook_Review {
         driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys("Humera");
         driver.findElement(By.xpath("//input[@name='lastname']")).sendKeys("Zaid");
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//img[contains(@src,'https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/C6QZ-pcv3Bd')]")).click();
+        // driver.findElement(By.xpath("//img[@src='https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/C6QZ-pcv3Bd.png']")).click();
+        driver.findElement(By.xpath("//img[@class='_8idr img']")).click();
         Thread.sleep(3000);
         driver.close();
     }

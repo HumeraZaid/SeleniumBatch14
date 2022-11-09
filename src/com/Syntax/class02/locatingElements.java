@@ -28,7 +28,7 @@ public class locatingElements {
         // Maximize the window
         driver.manage().window().maximize();
 
-        // Enter the username in the textbox. Locate the element and send the keys
+        // Enter the username in the textbox. Locate the element and send the keys.
         driver.findElement(By.id("email")).sendKeys("abracadbara");
 
         // Enter the password in the text box
