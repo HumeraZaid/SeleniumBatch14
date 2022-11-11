@@ -15,6 +15,9 @@ public class C4_HW2 {
        Leave password field empty.
        Click on login button.
        Verify error message with text “Password cannot be empty” is displayed.
+
+       Hint:
+       You can use if else condition for verification of message.
      */
 
     public static void main(String[] args) {
@@ -22,6 +25,7 @@ public class C4_HW2 {
         System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
+
         driver.get("http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login");
 
         driver.manage().window().maximize();

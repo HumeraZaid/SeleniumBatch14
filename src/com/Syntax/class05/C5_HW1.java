@@ -20,6 +20,7 @@ public class C5_HW1 {
         System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
+
         driver.get("https://www.facebook.com/");
 
         driver.manage().window().maximize();

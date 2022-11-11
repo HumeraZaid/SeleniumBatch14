@@ -20,6 +20,7 @@ public class C4_HW1 {
         System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
+
         driver.get("http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login");
 
         driver.manage().window().maximize();

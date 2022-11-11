@@ -20,6 +20,7 @@ public class C3_HW1 {
         System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
+
         driver.get("http://syntaxprojects.com/");
 
         Thread.sleep(2000);

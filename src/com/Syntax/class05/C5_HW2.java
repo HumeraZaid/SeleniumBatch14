@@ -23,6 +23,7 @@ public class C5_HW2 {
         System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
+
         driver.get("https://www.ebay.com/");
 
         driver.manage().window().maximize();

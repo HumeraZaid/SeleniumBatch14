@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 public class C6_HW1 {
 
     /*
-       Go to https://chercher.tech/practice/frames.
+       Go to https://chercher.tech/practice/frames:
        1. Check the checkbox.
        2. Select "Baby Cat" from the dropdown.
        3. Send text to the textbox as "DONE".
