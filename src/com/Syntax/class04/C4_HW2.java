@@ -9,12 +9,11 @@ public class C4_HW2 {
 
     /*
        HRMS Application Negative Login:
-       Open Chrome browser.
-       Go to “http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login”.
-       Enter valid username.
-       Leave password field empty.
-       Click on login button.
-       Verify error message with text “Password cannot be empty” is displayed.
+       Open Chrome browser and go to “http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login”:
+       1. Enter valid username.
+       2. Leave password field empty.
+       3. Click on the LOGIN button.
+       4. Verify if error message with text “Password cannot be empty” is displayed.
 
        Hint:
        You can use if else condition for verification of message.

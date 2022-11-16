@@ -7,10 +7,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class C2_HW1 {
 
     /*
-        Navigate to https://parabank.parasoft.com/parabank/register.htm;jsessionid=B8DD31FF0AFEDBDF4454B27BBC5C05B0%22
-        Fill out the form.
-        Click on register.
-        Close the browser.
+        Navigate to https://parabank.parasoft.com/parabank/register.htm;jsessionid=B8DD31FF0AFEDBDF4454B27BBC5C05B0%22:
+        1. Fill out the form.
+        2. Click on REGISTER.
+        3. Close the browser.
      */
 
     public static void main(String[] args) throws InterruptedException {

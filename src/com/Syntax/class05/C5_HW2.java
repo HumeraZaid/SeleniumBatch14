@@ -11,11 +11,11 @@ import java.util.List;
 public class C5_HW2 {
 
     /*
-      1. Go to ebay.com.
-      2. Get all the categories and print them in the console (in search bar you will see categories mentioned as dropdown).
-      3. Select Computers/Tables & Networking.
-      4. Click on Search.
-      5. Verify the title.
+      Go to ebay.com:
+      1. Get all the categories and print them in the console (in the Search bar, you will see categories mentioned in a dropdown).
+      2. Select Computers/Tables & Networking.
+      3. Click on Search.
+      4. Verify the title.
      */
 
     public static void main(String[] args) {

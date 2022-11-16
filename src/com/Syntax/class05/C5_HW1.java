@@ -9,10 +9,10 @@ import org.openqa.selenium.support.ui.Select;
 public class C5_HW1 {
 
     /*
-      1. Go to facebook.
-      2. Click on Create new account.
-      3. Fill out the whole form.
-      4. Take a screenshot of filled out form manually and share in HW channel along with code.
+      Go to fb.com:
+      1. Click on Create new account.
+      2. Fill out the whole form.
+      3. Take a screenshot of filled out form manually and share in HW channel along with code.
     */
 
     public static void main(String[] args) throws InterruptedException {

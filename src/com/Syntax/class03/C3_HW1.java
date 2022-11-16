@@ -7,12 +7,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class C3_HW1 {
 
     /*
-       Navigate to http://syntaxprojects.com/.
-       Click on start practicing.
-       Click on simple form demo.
-       Enter any text on first text box.
-       Click on show message.
-       Quit the browser.
+       Navigate to http://syntaxprojects.com/:
+       1. Click on Start Practicing.
+       2. Click on Simple Form Demo.
+       3. Enter any text on the first textbox.
+       4. Click on Show Message.
+       5. Quit the browser.
      */
 
     public static void main(String[] args) throws InterruptedException {

@@ -8,11 +8,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class C4_HW1 {
 
     /*
-       Open Chrome browser.
-       Go to “http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login”.
-       Enter valid username and password (username - Admin, password - Hum@nhrm123).
-       Click on login button.
-       Then verify the message "Welcome Admin " is there on the top-right corner.
+       Open Chrome browser and go to “http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login”:
+       1. Enter valid username and password (username - Admin, password - Hum@nhrm123).
+       2. Click on the LOGIN button.
+       3. Then verify if the "Welcome Admin" message is there on the top-right corner.
      */
 
     public static void main(String[] args) {

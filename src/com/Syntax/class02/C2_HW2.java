@@ -8,11 +8,11 @@ public class
 C2_HW2 {
 
     /*
-      Navigate to fb.com.
-      Click on create new account.
-      Fill up all the text boxes.
-      Close the popup.
-      Close the browser.
+      Navigate to fb.com:
+      1. Click on Create new account.
+      2. Fill up all the textboxes.
+      3. Close the popup.
+      4. Close the browser.
      */
 
     public static void main(String[] args) throws InterruptedException {

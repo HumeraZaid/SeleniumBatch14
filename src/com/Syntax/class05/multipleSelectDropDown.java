@@ -43,7 +43,10 @@ public class multipleSelectDropDown {
         // Deselect by index
         sel.deselectByIndex(3);
 
-        // Write down the code to select all the options in the dropdown
+        /*
+           Task: Write down the code to select all the options in the dropdown
+         */
+
         List<WebElement> options = sel.getOptions();
 
         for(int i=0; i<options.size(); i++)
