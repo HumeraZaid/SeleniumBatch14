@@ -32,11 +32,11 @@ public class C8_HW1 {
         // Introduce some implicit wait
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
-        // Maximize the window
-        driver.manage().window().maximize();
-
         //  Go to the website
         driver.get("https://the-internet.herokuapp.com/dynamic_controls");
+
+        // Maximize the window
+        driver.manage().window().maximize();
 
         // Part 1: Click on A checkbox and then click on Remove.
         WebElement checkBox = driver.findElement(By.xpath("//input[@type='checkbox']")); // Find A checkbox by xpath
@@ -62,14 +62,17 @@ public class C8_HW1 {
         WebDriverWait enableWait = new WebDriverWait(driver, 20); // Define some explicit wait
         enableWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[@id='message']"))); // Find the "It's enabled!" message by xpath and wait for it to appear
 
+        WebElement textBox = driver.findElement(By.xpath("//form[@id='input-example']/input")); // Find the textbox by xpath
+        System.out.println("Textbox is enabled: " + textBox.isEnabled()); // Print the status of the textbox
+
         WebElement enabledMessage = driver.findElement(By.xpath("//p[@id='message']")); // Find the "It's enabled!" message by xpath
         String enabledText = enabledMessage.getText(); // Get text from the "It's enabled!" message
         System.out.println("Text displayed when the button is enabled: " + enabledText); // Print the text
 
 
         // Part 4: Enter text and click on Disable.
-        WebElement textBox = driver.findElement(By.xpath("//input[@type='text']")); // Find the textbox by xpath
-        textBox.sendKeys("Keep calm and learn Selenium!!"); // Send keys to the textbox
+        WebElement textBox1 = driver.findElement(By.xpath("//input[@type='text']")); // Find the textbox by xpath
+        textBox1.sendKeys("Keep calm and learn Selenium!!"); // Send keys to the textbox
 
         WebElement disableButton = driver.findElement(By.xpath("//button[@onclick='swapInput()']")); // Find the Disable button by xpath
         disableButton.click(); // Click on Disable
@@ -82,5 +85,8 @@ public class C8_HW1 {
         WebElement disabledMessage = driver.findElement(By.xpath("//p[@id='message']")); // Find the "It's disabled!" message by xpath
         String disabledText = disabledMessage.getText(); // Get text from the "It's disabled!" message
         System.out.println("Text displayed when the button is disabled: " + disabledText); // Print the text
+
+        WebElement textBox2 = disableButton.findElement(By.xpath("//input[@type='text']")); // Find the textbox by xpath
+        System.out.println("Textbox is enabled: " + textBox.isEnabled()); // Print the status of the textbox
     }
 }
