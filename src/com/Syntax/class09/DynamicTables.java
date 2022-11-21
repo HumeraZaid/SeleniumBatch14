@@ -48,7 +48,7 @@ public class DynamicTables {
             String columnText = secondColumn.get(i).getText(); // MyMoney
             // Check for the desired value
             if (columnText.equalsIgnoreCase("MyMoney")) {
-            // Print out the index of the column/row which contains the MyMoney product
+                // Print out the index of the column/row which contains the MyMoney product
                 System.out.println("The index of the row which contains the MyMoney product is " + (i + 1));
                 WebElement checkBox = driver.findElement(By.xpath("//table[@class='SampleTable']/tbody/tr[" + (i + 2) + "]/td[1]"));
                 checkBox.click();

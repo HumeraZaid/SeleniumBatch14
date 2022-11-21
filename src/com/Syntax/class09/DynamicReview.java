@@ -51,7 +51,7 @@ public class DynamicReview {
                 int rowNumber = i + 1;
                 System.out.println("MyMoney is found on row number: " + rowNumber);
 
-                // get the checkbox on this row number and click on it
+                // Get the checkbox on this row number and click on it
                 WebElement checkBox = driver.findElement(By.xpath("//table[@class='SampleTable']/tbody/tr[" + (rowNumber + 1) + "]/td[1]"));
                 checkBox.click();
 

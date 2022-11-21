@@ -52,7 +52,7 @@ public class C8_HW1_Review {
         WebElement buton2 = driver.findElement(By.xpath("//button[text()='Enable']"));
         buton2.click();
 
-        // Define some explicit
+        // Define some explicit wait
         WebDriverWait wait= new WebDriverWait(driver,20);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@type='text']")));
 

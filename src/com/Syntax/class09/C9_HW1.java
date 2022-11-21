@@ -36,7 +36,7 @@ public class C9_HW1 {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
         // Part 1: 1. Click on PIM.
-        var path = "Data/C9_HW1.properties";
+        var path = "Data/config.properties";
         var fileInputStream = new FileInputStream(path);
         var properties = new Properties();
         properties.load(fileInputStream);
@@ -70,7 +70,7 @@ public class C9_HW1 {
             // System.out.println(columnText);
             if(columnText.equals("34438833"))
             {
-                WebElement checkBox = driver.findElement(By.xpath("//table[@id='resultTable']/tbody/tr["+ (i+1) +"]/td[1]"));
+                WebElement checkBox = driver.findElement(By.xpath("//table[@id='resultTable']/tbody/tr[" + (i+1) + "]/td[1]"));
                 checkBox.click();
             }
         }
