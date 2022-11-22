@@ -7,18 +7,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-public class C10_HW1 {
+public class C10_HW {
 
     /*
-       Go to syntax HRMS:
-       1. Go to the Recruitment tab.
-       2. From the calendar, just select a date 8 August 2023.
+      Go to http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login:
+      1. Click on the Recruitment tab.
+      2. Click on the Date of Application From calendar.
+      3. Select any date, month, and year from the calendar.
      */
 
     public static void main(String[] args) throws IOException {
@@ -77,19 +77,20 @@ public class C10_HW1 {
         Select year = new Select(years);
 
         // Select an option by value
-        year.selectByValue("2023");
+        year.selectByValue("2018");
 
         // Get all the dates from the calendar
-        List<WebElement> dates = driver.findElements(By.xpath("//table[@class='ui-datepicker-calendar']/tbody/tr/td"));
+        List<WebElement> dates = driver.findElements(By.xpath("//table[@class='ui-datepicker-calendar']/tbody/tr/td[2]"));
 
         // Traverse through the list to find the desired date
-        for(WebElement date : dates)
+        for(int i = 0; i < dates.size(); i++)
         {
-            if(date.getText().equals("23"))
+            String date = dates.get(i).getText();
+            if(date.equals("28"))
             {
-                date.click();
+                // Get the date on this row and click on it
+                driver.findElement(By.xpath("(//table[@class='ui-datepicker-calendar']/tbody/tr[" + (i+1) + "]/td[2])")).click();
             }
-
         }
     }
 }
